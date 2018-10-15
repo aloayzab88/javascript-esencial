@@ -1,0 +1,9 @@
+extends ../templates/main-template
+
+block title
+    -var project = {name: 'Site', section: 'Section'}
+    title= project.name +' | ' + project.section
+
+block description
+    meta(name='description', content='Page description')
+block content

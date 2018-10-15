@@ -1,0 +1,42 @@
+// Clearfix
+@mixin clearfix() {
+    &::before, &::after {
+        content: '';
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.visually-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+@mixin placeholder($n) {
+    &::-webkit-input-placeholder {
+       color: $n;
+       opacity: 1;
+    }
+
+    &:-moz-placeholder {
+       color: $n;
+       opacity: 1;
+    }
+
+    &::-moz-placeholder {
+       color: $n;
+       opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+       color: $n;
+       opacity: 1;
+    }
+}

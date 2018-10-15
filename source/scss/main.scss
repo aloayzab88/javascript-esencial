@@ -1,0 +1,19 @@
+// Stylus libraries
+@import '../../node_modules/normalize-scss/sass/normalize/import-now';
+@import '../../node_modules/sass-mediaqueries/media-queries';
+
+// Project dependencies
+@import 'project-dependencies/variables';
+@import 'project-dependencies/helpers';
+@import 'project-dependencies/fonts';
+
+// JS dependencies
+
+// Patterns
+@import 'patterns/general';
+@import 'patterns/layout';
+@import 'patterns/buttons';
+
+// Sections
+@import 'sections/header';
+@import 'sections/footer';
