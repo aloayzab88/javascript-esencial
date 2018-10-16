@@ -1,0 +1,27 @@
+.header {
+    background-color: $primary-color;
+    padding: 40px 0;
+
+    &__title {
+        font-size: 40px;
+        font-family: $font_bold;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        font-size: 16px;
+
+        p {
+            margin: 0 0 16px;
+        }
+
+        a {
+            background-color: $accent-color;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+    }
+}

@@ -7,47 +7,51 @@ block title
 block description
     meta(name='description', content='Page description')
 block content
-    h1 JavaScript Escencial
-    p Ejercicios de curso hecho por Juan Andrés Núñez
-    p: a(href='https://www.youtube.com/watch?v=FFPGrnr82oE&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv' target='_blank') Playlist del curso
-    h2 Temas
-    ol
-        mixin list(title, videoUrl, exerciseUrl)
-            li
-                h3= title
-                p
-                    a(href=videoUrl) Video
-                    if exerciseUrl 
-                        a(href=exerciseUrl) Ejercicio
-
-        +list('Aprende JavaScript esencial #1 - Introducción al curso', 'https://www.youtube.com/watch?v=FFPGrnr82oE&index=2&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #2 - Variables', 'https://www.youtube.com/watch?v=eLWpwyY3RSs&index=3&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #3 - JavaScript y HTML', 'https://www.youtube.com/watch?v=d29qM2xohdQ&index=4&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #4 - Bucle while', 'https://www.youtube.com/watch?v=-sja_FVdJQ4&index=5&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #5 - Bucle for', 'https://www.youtube.com/watch?v=dpJWpzyXmMM&index=6&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #6 - Bucle do while', 'https://www.youtube.com/watch?v=8xi8XKGGNwE&index=7&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #7 - If / Else', 'https://www.youtube.com/watch?v=AqQ6Irah4N0&index=8&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #8 - Switch', 'https://www.youtube.com/watch?v=kedU_XCfx7Y&index=9&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #9 - Condiciones complejas', 'https://www.youtube.com/watch?v=IbPSrCGXxIs&index=10&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #10 - Funciones nativas: alert', 'https://www.youtube.com/watch?v=VPQlNp9hKcw&index=11&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #11 - Funciones nativas: confirm', 'https://www.youtube.com/watch?v=lmWOF9vcYpI&index=12&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #12 - Funciones nativas: prompt', 'https://www.youtube.com/watch?v=7QGD3MEpIuI&index=13&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #13 - Operador typeof', 'https://www.youtube.com/watch?v=5s4GpyptDIY&index=14&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #14 - Creación de funciones', 'https://www.youtube.com/watch?v=1CdiNPAR1N0&index=15&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #15 - La importancia de return', 'https://www.youtube.com/watch?v=h6MmwpNu7eI&index=16&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #16 - Ámbito de las variables', 'https://www.youtube.com/watch?v=Ck_xKRZR0pc&index=17&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #17 - Matrices (Arrays)', 'https://www.youtube.com/watch?v=Qj5BE-1iMX0&index=18&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #18 - Metodos de matrices', 'https://www.youtube.com/watch?v=UmRRIhRS2YA&index=19&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #19 - Array indexOf', 'https://www.youtube.com/watch?v=-fP71BGtd6M&index=20&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #20 - Matrices multidimensionales', 'https://www.youtube.com/watch?v=Bk9-xhLstmI&index=21&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #21 - Recorrer matrices', 'https://www.youtube.com/watch?v=cf0VLQRPCZ0&index=22&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #22 - Expresiones funcionales', 'https://www.youtube.com/watch?v=KJ_Bftiqq3E&index=23&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #23 - Alzado (hoisting)', 'https://www.youtube.com/watch?v=iibPWeXID8c&index=24&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #24 - Closures', 'https://www.youtube.com/watch?v=dJ3Onk2WRLs&index=25&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #25 - Closures y bucles', 'https://www.youtube.com/watch?v=IMfhM1xyCyA&index=26&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #26 - Objetos', 'https://www.youtube.com/watch?v=MmQuBTdgu7g&index=27&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #27 - Objetos II', 'https://www.youtube.com/watch?v=xVaj87Cm9nc&index=28&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #28 - Métodos y this', 'https://www.youtube.com/watch?v=g3fBLnh0rcU&index=29&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #29 - Herencia', 'https://www.youtube.com/watch?v=gd3VWud9IK0&index=30&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #30 - Creación de objetos', 'https://www.youtube.com/watch?v=PUfn_EIk83o&index=31&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
-        +list('Aprende JavaScript esencial #31 - Recomendaciones finales', 'https://www.youtube.com/watch?v=5EOlPHMhdaA&index=32&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+    header.header.shadow-2
+        .container
+            h1.header__title JavaScript Escencial
+            .header__content
+                p Ejercicios de curso hecho por Juan Andrés Núñez
+                a.shadow-1(href='https://www.youtube.com/watch?v=FFPGrnr82oE&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv' target='_blank') Playlist del curso
+    .page
+        .container
+            h2.page__title Temas
+            ol.content-list
+                mixin list(title, videoUrl, exerciseUrl)
+                    li.content-list__item
+                        h3.content-list__title= title
+                        p.content-list__text
+                            a.content-list__link.content-list__link_video(href=videoUrl) Video
+                            if exerciseUrl 
+                                a.content-list__link.content-list__link_exercise(href=exerciseUrl) Ejercicio
+                +list('Aprende JavaScript esencial #1 - Introducción al curso', 'https://www.youtube.com/watch?v=FFPGrnr82oE&index=2&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #2 - Variables', 'https://www.youtube.com/watch?v=eLWpwyY3RSs&index=3&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #3 - JavaScript y HTML', 'https://www.youtube.com/watch?v=d29qM2xohdQ&index=4&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #4 - Bucle while', 'https://www.youtube.com/watch?v=-sja_FVdJQ4&index=5&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #5 - Bucle for', 'https://www.youtube.com/watch?v=dpJWpzyXmMM&index=6&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #6 - Bucle do while', 'https://www.youtube.com/watch?v=8xi8XKGGNwE&index=7&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #7 - If / Else', 'https://www.youtube.com/watch?v=AqQ6Irah4N0&index=8&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #8 - Switch', 'https://www.youtube.com/watch?v=kedU_XCfx7Y&index=9&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #9 - Condiciones complejas', 'https://www.youtube.com/watch?v=IbPSrCGXxIs&index=10&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #10 - Funciones nativas: alert', 'https://www.youtube.com/watch?v=VPQlNp9hKcw&index=11&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #11 - Funciones nativas: confirm', 'https://www.youtube.com/watch?v=lmWOF9vcYpI&index=12&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #12 - Funciones nativas: prompt', 'https://www.youtube.com/watch?v=7QGD3MEpIuI&index=13&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #13 - Operador typeof', 'https://www.youtube.com/watch?v=5s4GpyptDIY&index=14&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #14 - Creación de funciones', 'https://www.youtube.com/watch?v=1CdiNPAR1N0&index=15&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #15 - La importancia de return', 'https://www.youtube.com/watch?v=h6MmwpNu7eI&index=16&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #16 - Ámbito de las variables', 'https://www.youtube.com/watch?v=Ck_xKRZR0pc&index=17&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #17 - Matrices (Arrays)', 'https://www.youtube.com/watch?v=Qj5BE-1iMX0&index=18&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #18 - Metodos de matrices', 'https://www.youtube.com/watch?v=UmRRIhRS2YA&index=19&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #19 - Array indexOf', 'https://www.youtube.com/watch?v=-fP71BGtd6M&index=20&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #20 - Matrices multidimensionales', 'https://www.youtube.com/watch?v=Bk9-xhLstmI&index=21&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #21 - Recorrer matrices', 'https://www.youtube.com/watch?v=cf0VLQRPCZ0&index=22&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #22 - Expresiones funcionales', 'https://www.youtube.com/watch?v=KJ_Bftiqq3E&index=23&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #23 - Alzado (hoisting)', 'https://www.youtube.com/watch?v=iibPWeXID8c&index=24&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #24 - Closures', 'https://www.youtube.com/watch?v=dJ3Onk2WRLs&index=25&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #25 - Closures y bucles', 'https://www.youtube.com/watch?v=IMfhM1xyCyA&index=26&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #26 - Objetos', 'https://www.youtube.com/watch?v=MmQuBTdgu7g&index=27&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #27 - Objetos II', 'https://www.youtube.com/watch?v=xVaj87Cm9nc&index=28&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #28 - Métodos y this', 'https://www.youtube.com/watch?v=g3fBLnh0rcU&index=29&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #29 - Herencia', 'https://www.youtube.com/watch?v=gd3VWud9IK0&index=30&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #30 - Creación de objetos', 'https://www.youtube.com/watch?v=PUfn_EIk83o&index=31&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
+                +list('Aprende JavaScript esencial #31 - Recomendaciones finales', 'https://www.youtube.com/watch?v=5EOlPHMhdaA&index=32&list=PLM-Y_YQmMEqAedHjvY3_v7EfGfFCHXYHv&t=0s')
