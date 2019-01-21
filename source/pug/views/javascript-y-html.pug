@@ -1,0 +1,14 @@
+extends ../templates/main-template
+
+block title
+    -var project = {name: 'JavaScript Esencial', section: 'Variables'}
+    title= project.name +' | ' + project.section
+
+block description
+    meta(name='description', content='Page description')
+block content
+    .page
+        .container
+            h2.page__title JavaScript y HTML
+block other-scripts
+    script(src='js/javascript-y-html.js')

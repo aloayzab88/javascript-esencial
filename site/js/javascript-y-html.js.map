@@ -1,0 +1,1 @@
+{"version":3,"sources":["javascript-y-html.js"],"names":["numero","nombre"],"mappings":"AAAA,IAAIA,OAAS,GACTC,OAAS","file":"javascript-y-html.js","sourcesContent":["var numero = 20;\r\nvar nombre = 'Alejandro';"]}

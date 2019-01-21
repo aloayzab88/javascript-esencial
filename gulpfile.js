@@ -50,7 +50,7 @@ var path = {
     },
     js: {
         js: [directory.source + '/js/*.js'],
-        mainJS: [directory.source + '/js/main.js'],
+        mainJS: [directory.source + '/js/*.js'],
         dest: directory.dest + '/js/'
     },
     fonts: {
