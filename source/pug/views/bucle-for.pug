@@ -1,0 +1,14 @@
+extends ../templates/main-template
+
+block title
+    -var project = {name: 'JavaScript Esencial', section: ' Bucle for'}
+    title= project.name +' | ' + project.section
+
+block description
+    meta(name='description', content='Page description')
+block content
+    .page
+        .container
+            h2.page__title  Bucle for
+block other-scripts
+    script(src='js/bucle-for.js')

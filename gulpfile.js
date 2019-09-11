@@ -10,7 +10,7 @@ const cssmqpacker = require('css-mqpacker');
 const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
 const include = require("gulp-include");
-const uglify = require('gulp-uglify');
+const terser = require('gulp-terser');
 const tinypng = require('gulp-tinypng-compress');
 const svgmin = require('gulp-svgmin');
 const svgstore = require('gulp-svgstore');
@@ -187,7 +187,7 @@ gulp.task('js', function () {
                 __dirname + "/node_modules"
             ]
         }))
-        .pipe(uglify())
+        .pipe(terser())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(path.js.dest))
         .pipe(browserSync.reload({ stream: true }))
