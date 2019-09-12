@@ -1,0 +1,14 @@
+extends ../templates/main-template
+
+block title
+    -var project = {name: 'JavaScript Esencial', section: 'If/Else'}
+    title= project.name +' | ' + project.section
+
+block description
+    meta(name='description', content='Page description')
+block content
+    .page
+        .container
+            h2.page__title If/Else
+block other-scripts
+    script(src='js/if-else.js')
