@@ -215,7 +215,7 @@ gulp.task('fonts', function () {
 gulp.task('images', function () {
     return gulp.src(path.images.images)
         .pipe(tinypng({
-            key: 'Z21qZlD7lr4MRVkieMTG4iptHj5Qahjr',
+            key: '',
             sigFile: 'source/images/.tinypng-sigs',
             log: true,
             summarise: true
